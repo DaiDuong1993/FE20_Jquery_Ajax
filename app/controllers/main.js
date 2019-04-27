@@ -3,6 +3,10 @@ $(document).ready(function(){
     var userservice =  new NguoiDungService();
     LayDanhSachUser();
 
+    function moitaobranch(){
+        
+    }
+
     function FixHeaderFooterModal(title, btnthem, idbtn){
         $(".modal-title").html(title);
         
