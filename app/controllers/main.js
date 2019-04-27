@@ -4,7 +4,7 @@ $(document).ready(function(){
     LayDanhSachUser();
 
     function moitaobranch(){
-        
+        console.log("thêm");
     }
 
     function FixHeaderFooterModal(title, btnthem, idbtn){
