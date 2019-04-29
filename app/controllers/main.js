@@ -84,7 +84,17 @@ $(document).ready(function(){
         userservice.LayDanhSachNguoiDung();
        
     }
-
+    $("#basic-addon2").click(function(){
+        var taikhoancantim = $("#timkiemtheoTK").val();
+        var nguoidungcantim = userservice.laythongtinND(taikhoancantim);
+        $(".modal-title").html("Nguoi Dung Can Tim");
+        $("#TaiKhoan").val(nguoidungcantim.TaiKhoan);
+        $("#HoTen").val(nguoidungcantim.HoTen);
+        $("#MatKhau").val(nguoidungcantim.MatKhau);
+        $("#Email").val(nguoidungcantim.Email);
+        $("#SoDienThoai").val(nguoidungcantim.SoDT);
+        $("#loaiNguoiDung").val(nguoidungcantim.MaLoaiNguoiDung);
+    })
    
 
 
