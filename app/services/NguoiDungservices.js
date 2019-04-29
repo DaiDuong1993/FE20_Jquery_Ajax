@@ -86,7 +86,7 @@ function NguoiDungService(){
         // }) 
         // return nguoidung;
         return DanhSachNguoiDung.find(function(item){
-            return item.TaiKhoan === taikhoanND
+            return (item.TaiKhoan === taikhoanND || item.SoDT === taikhoanND)
         })
         
     }
